@@ -92,6 +92,19 @@ header {
     margin-top: 50px;
     width: 65%;
 }
+.style-header {
+    border-bottom: 2px solid dodgerblue;
+    width: 25%;
+    display: inline-block;
+    padding-right: 20px;
+    line-height: 1.7;
+    color: #333;
+    font-size: 16px;
+}
+.style-header,
+h4 {
+    text-transform: capitalize;
+}
 .section p {
     margin-top: 10px;
     line-height: 1.5;
@@ -104,29 +117,67 @@ header {
 .img-holder img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 .column-hold {
     text-align: center;
 }
 .column {
     overflow: hidden;
-    border-radius: 15px;
+    vertical-align: top;
     display: inline-block;
     box-sizing: border-box;
     width: 30%;
     margin: 10px;
-    border: 1px solid #333;
 }
-.column h3 {
+.column:target {
+    box-shadow: 0 0 15px rgba(30, 143, 255, 0.335);
+    border-left: 2px solid dodgerblue;
+    border-right: 2px solid dodgerblue;
+    border-top: 2px solid dodgerblue;
+}
+.column h4 {
     text-align: center;
     padding: 5px 0;
-    color: white;
-    background-color: dodgerblue;
+    color: #333;
+    padding-bottom: 15px;
 }
 .column img {
+    border-top: 2px solid dodgerblue;
     width: 100%;
 }
 .column p {
-    padding: 20px;
+    padding: 20px 20px 25px 20px;
+    border-bottom: 2px solid dodgerblue;
+}
+
+footer {
+    color: white;
+    font-size: 14px;
+    background: linear-gradient(to right, dodgerblue 50%, rgb(0, 116, 233));
+}
+footer p#copyright {
+    color: white;
+    text-align: left;
+    display: inline-block;
+    padding: 5px 0;
+}
+.spacer {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 85%;
+}
+.soch {
+    display: inline-block;
+    padding-left: 10px;
+}
+.soch:hover {
+    opacity: 0.8;
+}
+.soch img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.15);
+    vertical-align: middle;
 }
